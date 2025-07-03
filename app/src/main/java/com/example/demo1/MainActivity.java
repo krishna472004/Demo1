@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
         // For simplicity, just display a toast message
         if (username.equals("your_username") && password.equals("your_password")) {
             showToast("Login successful!");
-        } else {
+        } else 
+        {
             showToast("Login failed. Please check your credentials.");
         }
     }
 
-    private void showToast(String message) {
+    private void showToast(String message) 
+    {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
